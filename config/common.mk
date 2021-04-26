@@ -273,6 +273,62 @@ $(call inherit-product, vendor/havoc/config/fonts.mk)
 # RRO Overlays
 $(call inherit-product, vendor/havoc/config/rro_overlays.mk)
 
+# Statusbar Icons
+PRODUCT_PACKAGES += \
+    AcherusSignalOverlay \
+    DoraSignalOverlay \
+    StrokeSignalOverlay \
+    SneakySignalOverlay \
+    XperiaSignalOverlay \
+    ZigZagSignalOverlay \
+    WavySignalOverlay \
+    RoundSignalOverlay \
+    InsideSignalOverlay \
+    BarsSignalOverlay \
+    AquariumSignalOverlay \
+    ButterflySignalOverlay \
+    DaunSignalOverlay \
+    DecSignalOverlay \
+    DeepSignalOverlay \
+    EqualSignalOverlay \
+    FanSignalOverlay \
+    HuaweiSignalOverlay \
+    RelSignalOverlay \
+    ScrollSignalOverlay \
+    SeaSignalOverlay \
+    StackSignalOverlay \
+    WannuiSignalOverlay \
+    WindowsSignalOverlay \
+    WingSignalOverlay \
+    CircleSignalOverlay \
+    IosSignalOverlay \
+    MiniSignalOverlay \
+    OdinSignalOverlay \
+    PillsSignalOverlay \
+    RomanSignalOverlay  \
+    GradiconSignalOverlay \
+    NothingDotSignalOverlay \
+    OutlineSignalOverlay \
+    PUISignalOverlay 
+	
+# Wi-Fi Icons
+PRODUCT_PACKAGES += \
+    DoraWiFiOverlay \
+    AcherusWiFiOverlay \
+    StrokeWiFiOverlay \
+    SneakyWiFiOverlay \
+    XperiaWiFiOverlay \
+    ZigZagWiFiOverlay \
+    WavyWiFiOverlay \
+    WeedWiFiOverlay \
+    RoundWiFiOverlay \
+    InsideWiFiOverlay \
+    BarsWiFiOverlay \
+    GradiconWiFiOverlay \
+    OutlineWiFiOverlay \
+    NothingDotWiFiOverlay \
+    PavlovaWiFiOverlay
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/havoc/config/partner_gms.mk
 -include vendor/havoc/config/version.mk
