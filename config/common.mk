@@ -221,6 +221,14 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/havoc/overlay/common
 # Enable ccache
 USE_CCACHE := true
 
+
+# Spoof fingerprint for Google Play Services and SafetyNet
+ifeq ($(PRODUCT_OVERRIDE_GMS_FINGERPRINT),)
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.build.gms_fingerprint=google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys
+else
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.build.gms_fingerprint=$(PRODUCT_OVERRIDE_GMS_FINGERPRINT)
+endif
+
 # Allows registering device to Google easier for gapps
 # Integrates package for easier Google Pay fixing
 PRODUCT_PACKAGES += \
