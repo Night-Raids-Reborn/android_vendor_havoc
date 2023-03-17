@@ -236,6 +236,11 @@ PRODUCT_PACKAGES += \
     GalleryGoPrebuilt
 endif
 
+# Include Lawnchair
+ifeq ($(USE_LAWNCHAIR),true)
+$(call inherit-product, vendor/lawnchair/lawnchair.mk)
+endif
+
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED ?= true
 ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
