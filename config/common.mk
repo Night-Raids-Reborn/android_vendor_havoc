@@ -214,6 +214,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
     ShadyQuickStep
 
+# AICP Ad-block
+PRODUCT_PACKAGES += \
+    hosts.aicp_adblock
+
 # Overlays
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/havoc/overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/havoc/overlay/common
