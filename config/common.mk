@@ -222,9 +222,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/havoc/overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/havoc/overlay/common
 
-# Enable ccache
-USE_CCACHE := true
-
 
 # Spoof fingerprint for Google Play Services and SafetyNet
 ifeq ($(PRODUCT_OVERRIDE_GMS_FINGERPRINT),)
