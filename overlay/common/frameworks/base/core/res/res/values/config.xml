@@ -315,4 +315,11 @@
 
     <!-- Flag indicating which package name can access DeviceConfig table -->
     <string name="config_deviceConfiguratorPackageName" translatable="false">org.protonaosp.deviceconfig</string>
+
+    <!-- Build properties from a GMS certified device against current platform SPL level -->
+    <string-array name="config_certifiedBuildProperties" translatable="false">
+        <item>ASUS_X00HD_4</item> <!-- Build.DEVICE -->
+        <item>WW_Phone</item>     <!-- Build.PRODUCT -->
+        <item>ASUS_X00HD</item>   <!-- Build.MODEL -->
+        <item>asus/WW_Phone/ASUS_X00HD_4:7.1.1/NMF26F/14.2016.1801.372-20180119:user/release-keys</item> <!-- Build.FINGERPRINT -->
 </resources>
