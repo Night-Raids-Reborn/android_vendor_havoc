@@ -135,7 +135,8 @@ PRODUCT_PACKAGES += \
     GamingMode \
     ShadyQuickStep \
     SoftAPManager \
-    TouchGestures
+    TouchGestures \
+    StitchImage
 
 # Offline charger
 PRODUCT_PACKAGES += \
