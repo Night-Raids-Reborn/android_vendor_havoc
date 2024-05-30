@@ -322,3 +322,4 @@ PRODUCT_PACKAGES += \
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/havoc/config/partner_gms.mk
 -include vendor/havoc/config/version.mk
+-include vendor/extra/product.mk
